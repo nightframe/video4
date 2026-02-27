@@ -34,6 +34,18 @@ video{
  preload="metadata">
 </video>
 </div>
+
+  <!-- ✅ TAMBAHAN (tidak mengubah kode lain) -->
+<script>
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const videoURL = params.get("u");
+  if(videoURL){
+    document.getElementById("myVideo").src = videoURL;
+  }
+})();
+</script>
+  
 <script>
 (function(){
 /* ================= CONFIG ================= */
